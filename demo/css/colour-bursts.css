@@ -1,0 +1,74 @@
+body {
+	background: url(../images/noise.png);
+	margin: 0;
+	padding: 40px;
+}
+
+ul#controls {
+	list-style-type: none;
+	width: 400px;
+	font: 16px/1.5 'Helvetica Neue', Arial, sans-serif;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+div.polaroid {
+	padding: 10px 10px 70px;
+	width: 400px;
+	border: 1px solid #999;
+	background: #FFF;
+	-webkit-transform: rotate(-2deg);
+	   -moz-transform: rotate(-2deg);
+		 -o-transform: rotate(-2deg);
+			transform: rotate(-2deg);
+	-webkit-box-shadow: 5px 5px 5px #888;
+	   -moz-box-shadow: 5px 5px 5px #888;
+		 -o-box-shadow: 5px 5px 5px #888;
+			box-shadow: 5px 5px 5px #888;
+}
+
+div.black-and-white {
+	background: url(../images/melbourne-bw.jpg) no-repeat 50% 50%;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0;
+}
+
+figure.colour {
+	background: url(../images/melbourne.jpg) no-repeat 50% 50%;
+	position: absolute;
+	top: 175px;
+	left: 175px;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+	padding: 0;
+	-webkit-border-radius: 800px;
+	   -moz-border-radius: 800px;
+		 -o-border-radius: 800px;
+			border-radius: 800px;
+	-webkit-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+	   -moz-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+		 -o-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+			transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+}
+	figure.colour.in {
+		width: 400px;
+		height: 400px;
+		-webkit-border-radius: 0;
+		   -moz-border-radius: 0;
+			 -o-border-radius: 0;
+				border-radius: 0;
+		top: 0;
+		left: 0; 
+		opacity: 1;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter: alpha(opacity=100);
+	}
+	

@@ -1,0 +1,44 @@
+div.black-and-white {
+	background: url(black-and-white.jpg) no-repeat 50% 50%;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0;
+}
+
+figure.colour {
+	background: url(colour.jpg) no-repeat 50% 50%;
+	position: absolute;
+	top: 175px;
+	left: 175px;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+	padding: 0;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+		 -o-border-radius: 100px;
+			border-radius: 100px;
+	-webkit-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+	   -moz-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+		 -o-transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+			transition: all 1s cubic-bezier(0.335, 0.475, 0.890, 0.150);
+}
+	figure.colour.in {
+		width: 400px;
+		height: 400px;
+		-webkit-border-radius: 0;
+		   -moz-border-radius: 0;
+			 -o-border-radius: 0;
+				border-radius: 0;
+		top: 0;
+		left: 0; 
+		opacity: 1;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter: alpha(opacity=100);
+	}
+	

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS colour bursts demo</title>
+	<link rel="stylesheet" href="css/colour-bursts.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('a[href="#in"]').click(function(e){
+				e.preventDefault();
+				$('figure.colour').addClass('in');
+			});
+			
+			$('a[href="#out"]').click(function(e){
+				e.preventDefault();
+				$('figure.colour').removeClass('in');
+			});
+		});
+	</script>
+	
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<ul id="controls">
+		<li><a href="#in">Colour burst in</a></li>
+		<li><a href="#out">Colour burst out</a></li>
+	</ul>
+
+	<div class="polaroid">
+		<div class="black-and-white">
+			<figure class="colour">
+
+			</figure>
+		</div>
+	</div>
+	
+</body>
+</html>
